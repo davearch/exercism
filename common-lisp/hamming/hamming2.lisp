@@ -13,7 +13,7 @@
 		   ;; otherwise (implicitly) return nil
 		   ((= (length string1) (length string2))
 		    (sub-distance (subseq string1 1)(subseq string2 1)
-				  (if (not (string= (subseq string1 0 1) (subseq string2 0 1)))
+				  (if (string/= (subseq string1 0 1) (subseq string2 0 1))
 				      (incf counter)
 				      counter))))))
     (sub-distance string1 string2 0)))

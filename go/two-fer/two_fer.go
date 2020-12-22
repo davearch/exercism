@@ -7,7 +7,7 @@ package twofer
 
 import "fmt"
 
-// ShareWith should have a comment documenting it.
+// ShareWith prints out a sharing string.
 func ShareWith(name string) string {
 	if len(name) == 0 {
 		name = "you"
